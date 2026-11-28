@@ -16,8 +16,8 @@ export class PasswordField {
 
   @Input({required: true}) control!: FormControl;
 
-  clickEvent(event: MouseEvent) {
-    this.hide.set(!this.hide());
+  clickEvent(event: MouseEvent) { 
+    this.hide.set(!this.hide()); // alterna visibilidade
     event.stopPropagation();
   }
 }
